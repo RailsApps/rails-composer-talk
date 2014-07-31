@@ -80,6 +80,7 @@ output: index.html
 * Bootstrap or Foundation
 * OmniAuth or Devise (authentication)
 * Pundit (authorization)
+* more to come
 
 --
 
@@ -89,6 +90,7 @@ output: index.html
 * Devise
 * Pundit
 * RSpec
+* more to come
 
 --
 
