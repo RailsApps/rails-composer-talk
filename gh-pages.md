@@ -1,20 +1,20 @@
-title: Rails Challenges
+title: Rails Composer
 author:
   name: "Daniel Kehoe"
   twitter: "@rails_apps"
-  url: "http://learn-rails.com"
+  url: "http://railsapps.github.io/"
 output: index.html
 style: help.css
 template: gh-pages-template.mustache
 
 --
 
-# Rails Challenges
-## How to help Ruby on Rails beginners
+# Rails Composer
+## and the RailsApps open source project
 
 --
 
-## [railsapps.github.io/rails-challenges](http://railsapps.github.io/rails-challenges/)
+## [railsapps.github.io/rails-composer-talk](http://railsapps.github.io/rails-composer-talk/)
 ## for this slideshow
 
 --
