@@ -311,7 +311,7 @@ https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 * [RailsBricks](http://www.railsbricks.net/)
 
 --
-### Benefits
+### Advantages
 
 * open source
 * more eyes, fewer bugs
