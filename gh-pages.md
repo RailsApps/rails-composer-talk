@@ -21,198 +21,91 @@ output: index.html
 
 --
 
-### Rails can be difficult for beginners
+### Your free copy of the book
 
-* Rails is getting more complicated
-* as mentors, we can help
-
---
-
-### Resistance
-
-* when we're tired and discouraged
-* attaches to imaginary problems
-* attaches to real problems
+* http://learn-rails.com/students
+* download code: NYCRAILS
 
 --
 
-### Overcoming resistance
+### If you like the book
 
-* acknowledge real problems
-* scale down the magnitude of the problem
-* provide resources and problem-solving approaches
-
---
-
-### 1. It is difficult to install Ruby.
-
-* the beginner's first big obstacle
-* not like installing a consumer app
-* every system is unique
+* tell your friends
+* write a blog post
+* add a link to the book
 
 --
 
-### Recommended
+### The RailsApps project
 
-* use RVM
-* article on [installing Rails](http://railsapps.github.io/installing-rails.html)
-* use [Nitrous.io](https://www.nitrous.io/) when all else fails
-
---
-
-### 2. Rails is a nightmare on Windows.
-
-* open source devs use Unix-based tooling
-* some gems won't work on Windows
+* [example applications](https://github.com/RailsApps)
+* [Rails Composer](https://github.com/RailsApps/rails-composer/)
+* [tutorials](http://railsapps.github.io/)
 
 --
 
-### Recommended
+### Support for open source projects
 
-* use [Nitrous.io](https://www.nitrous.io/)
-* install the [Railsbridge Virtual Machine](https://github.com/railsbridge-boston/railsbridge-virtual-machine)
-* or [rails-dev-box](https://github.com/rails/rails-dev-box)
-
---
-
-### 3. Rails error reporting is cryptic.
-
-* stack traces are intimidating
-* error messages are "too technical"
-* why can't it be simpler?
+* part-time/weekend side projects
+* corporate 20% time
+* what else works?
 
 --
 
-### Rails error reporting is actually very good.
+### $19/month subscription
 
-* provides all the details an experienced developer needs
-* can't say what you did wrong, only what happened when you did it
-* help beginners read stack traces
-
---
-
-### 4. There is too much magic.
-
-* “convention over configuration” leads to obscurity
-* implementation is hidden in the depths of the Rails
+* example applications -free
+* Rails Composer - free
+* tutorials - for subscribers only
 
 --
 
-### The magic is there to serve you.
+### RailsApps Milestones
 
-* do you like to know how things work?
-* dig into the source code, or...
-* take on faith that “it just works”
-
---
-
-### 5. Rails contains lots of things I don’t understand.
-
-* so many files and folders
-* code that is unfamiliar
-* what parts do I need to know?
+* 500 subscribers - July 10, 2014
+* apprenticeships - next summer?
 
 --
 
-### You'll gain understanding over time.
+### Example applications
 
-* you don't need to know all of Rails
-* experienced developers are always learning
-
---
-
-### 6. There is too much to learn.
-
-* web development used to be simpler
-* how do you keep up?
+* starter applications
+* reference implementations
+* issues and pull requests
 
 --
 
-### There is joy in learning.
+### Examples for Rails and ...
 
-* lots of great resources we didn't have before
-* your career will never be dull
-* you can specialize
-
---
-
-### 7. It is difficult to find up-to-date advice.
-
-* new major releases of Rails every 2 years
-* Google or Stack Overflow advice can be out-of-date
+* Bootstrap or Foundation
+* OmniAuth or Devise (authentication)
+* Pundit (authorization)
 
 --
 
-### Show beginners how to evaluate advice.
+### Tutorials for Rails and ...
 
-* filter the results in Google
-* check the dates in Stack Overflow
-
---
-
-### 8. It is difficult to know what gems to use.
-
-* how do you find gems?
-* which are best?
+* Bootstrap
+* Devise
+* Pundit
+* RSpec
 
 --
 
-### Gem discovery is an art.
-
-* use [The Ruby Toolbox](https://www.ruby-toolbox.com/)
-* look at example applications
-* monitor [Ruby Weekly](http://rubyweekly.com/) and [RubyFlow](http://www.rubyflow.com/)
+### No mystery code!
 
 --
 
-### 9. How to transition from tutorials to my own applications?
+### Rails Composer
 
-* copy and pasting gets me started, but...
-* how do I build from scratch?
+```console
+$ rails new myapp -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 
+```
 --
 
-### Focus on the process.
-
-* start with user stories
-* look for code samples
-* try "spikes"
-
---
-
-### 10. I’m not sure where the code goes.
-
-* does it go in the model or the controller?
-* should all my controller actions be RESTful?
-
---
-
-### Get peer support.
-
-* read the blogs
-* study examples
-* go to hack nights
-
---
-
-### 11. People like me don’t go into programming.
-
-* not every programmer looks like one
-* not everyone has the same background
-* being different can be challenging
-
---
-
-### We can be more welcoming.
-
-* as engineers, we can optimize for inclusion
-* get a clue, we all have biases
-* get involved with [Railsbridge](http://railsbridge.org/) or [Rails Girls](http://railsgirls.com/)
 
 --
 
 <img src="http://learn-rails.com/images/rails-trucker-hat.jpg" height="210px">
-
-## how do you help beginners with Rails challenges?
-## discuss!
 
