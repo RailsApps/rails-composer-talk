@@ -279,7 +279,7 @@ $ rails server
 ### Forget what you've seen, if ...
 
 * you're a student
-* you only work on one Rails app
+* you work on one Rails app
 
 --
 ### It's for you, if ...
@@ -292,14 +292,58 @@ $ rails server
 
 * a Rails application template
 * a Ruby script using the Thor API
+* 2128 lines of code
 
 See the code:
 https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 
 --
+### Built from recipes
 
+* [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
+* new features? add to the rails_apps_composer gem
+* issues? fix in the rails_apps_composer gem
+
+--
+### Similar projects
+
+* [Prelang](http://prelang.com/)
+* [RailsBricks](http://www.railsbricks.net/)
+
+--
+### Benefits
+
+* open source
+* more eyes, fewer bugs
+* stays current as Rails and gems change
+
+--
+### Drawbacks
+
+* difficult to test every option
+* some options are neglected
+* "build your own" option is a minefield
+
+--
+### Roadmap
+
+* more example applications
+* more options
+
+--
+### Like it?
+
+* Support the project with a subscription
+
+--
+### Trivia contest
+
+* Rails core contributor @tenderlove has a famous cat. What is the cat's name?
+* The creator of Rails drives race cars. What team does he race for?
+* Text to 415-860-9142
 
 --
 
 <img src="http://learn-rails.com/images/rails-trucker-hat.jpg" height="210px">
 
+--
