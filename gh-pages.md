@@ -132,6 +132,39 @@ option  Choose a starter application.
 ```
 
 --
+```
+Get on the mailing list for Rails Composer news?
+      option  Enter your email address:
+
+```
+
+--
+```
+option  Web server for development?
+          1)  WEBrick (default)
+          2)  Thin
+          3)  Unicorn
+          4)  Puma
+          5)  Phusion Passenger (Apache/Nginx)
+          6)  Phusion Passenger (Standalone)
+      choose  Enter your selection: 1
+
+```
+
+--
+```
+option  Web server for production?
+          1)  Same as development
+          2)  Thin
+          3)  Unicorn
+          4)  Puma
+          5)  Phusion Passenger (Apache/Nginx)
+          6)  Phusion Passenger (Standalone)
+      choose  Enter your selection:
+
+```
+
+--
 
 
 --
