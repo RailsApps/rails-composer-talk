@@ -1,11 +1,9 @@
 title: Rails Composer
 author:
   name: "Daniel Kehoe"
-  twitter: "@rails_apps"
+  twitter: "rails_apps"
   url: "http://railsapps.github.io/"
 output: index.html
-style: help.css
-template: gh-pages-template.mustache
 
 --
 
