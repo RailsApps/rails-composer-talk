@@ -98,10 +98,39 @@ output: index.html
 
 ### Rails Composer
 
-```console
-$ rails new myapp -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+```
+$ rails new myapp -m
+ https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 
 ```
+rails new myapp -m
+
+https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+--
+```
+option  Build a starter application?
+          1)  Build a RailsApps example application
+          2)  Contributed applications (none available)
+          3)  Custom application (experimental)
+      choose  Enter your selection: 1
+
+```
+
+--
+```
+option  Choose a starter application.
+          1)  learn-rails
+          2)  rails-bootstrap
+          3)  rails-foundation
+          4)  rails-mailinglist-signup
+          5)  rails-omniauth
+          6)  rails-devise
+          7)  rails-devise-pundit
+          8)  rails-signup-download
+      choose  Enter your selection: 7
+
+```
+
 --
 
 
