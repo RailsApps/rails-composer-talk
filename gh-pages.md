@@ -160,9 +160,120 @@ option  Web server for production?
           4)  Puma
           5)  Phusion Passenger (Apache/Nginx)
           6)  Phusion Passenger (Standalone)
-      choose  Enter your selection:
+      choose  Enter your selection: 1
 
 ```
+
+--
+```
+option  Database used in development?
+        1)  SQLite
+        2)  PostgreSQL
+        3)  MySQL
+    choose  Enter your selection: 1
+```
+
+--
+```
+option  Template engine?
+          1)  ERB
+          2)  Haml
+          3)  Slim
+      choose  Enter your selection: 1
+```
+
+--
+```
+option  Test framework?
+          1)  None
+          2)  RSpec with Capybara
+      choose  Enter your selection: 2
+```
+
+--
+```
+option  Continuous testing?
+          1)  None
+          2)  Guard
+      choose  Enter your selection: 1
+```
+
+--
+```
+option  Front-end framework?
+          1)  None
+          2)  Bootstrap 3.0
+          3)  Bootstrap 2.3
+          4)  Zurb Foundation 5.0
+          5)  Zurb Foundation 4.0
+          6)  Simple CSS
+      choose  Enter your selection: 2
+```
+
+--
+```
+option  Add support for sending email?
+          1)  None
+          2)  Gmail
+          3)  SMTP
+          4)  SendGrid
+          5)  Mandrill
+      choose  Enter your selection: 2
+```
+
+--
+```
+option  Devise modules?
+          1)  Devise with default modules
+          2)  Devise with Confirmable module
+          3)  Devise with Confirmable and Invitable modules
+      choose  Enter your selection: 1
+```
+
+--
+```
+option  Use a form builder gem?
+          1)  None
+          2)  SimpleForm
+      choose  Enter your selection: 1
+```
+
+--
+```
+option  Install page-view analytics?
+          1)  None
+          2)  Google Analytics
+          3)  Segment.io
+      choose  Enter your selection: 1
+```
+
+--
+```
+option  Set a robots.txt file to ban spiders? (y/n) n
+```
+
+--
+```
+option  Create a GitHub repository? (y/n) n
+```
+
+--
+```
+option  Use or create a project-specific rvm gemset? (y/n) y
+```
+
+--
+```
+$ cd myapp
+$ rspec
+$ rails server
+```
+
+--
+### Sign in
+
+* user@example.com
+* changeme
 
 --
 
