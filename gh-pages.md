@@ -276,6 +276,27 @@ $ rails server
 * changeme
 
 --
+### Forget what you've seen, if ...
+
+* you're a student
+* you only work on one Rails app
+
+--
+### It's for you, if ...
+
+* you frequently build Rails applications
+* you build a new Rails application once a year
+
+--
+### What is it, really?
+
+* a Rails application template
+* a Ruby script using the Thor API
+
+See the code:
+https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+
+--
 
 
 --
