@@ -338,8 +338,8 @@ https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 --
 ### Trivia contest
 
-* Rails core contributor @tenderlove has a famous cat. What is the cat's name?
-* The creator of Rails drives race cars. What team does he race for?
+* Rails core contributor @tenderlove has a famous cat. What is the [cat's name](https://twitter.com/tenderloves_cat)?
+* The creator of Rails drives race cars. What [team](http://www.youngdriver-amr.com/index.php?view=dh) does he race for?
 * Text to 415-860-9142
 
 --
