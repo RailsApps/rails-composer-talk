@@ -46,15 +46,15 @@ output: index.html
 
 ### Support for open source projects
 
-* part-time/weekend side projects
-* corporate 20% time
+* part-time/weekend side projects <--> babies/burnout
+* corporate 20% time <--> budget cuts
 * what else works?
 
 --
 
 ### $19/month subscription
 
-* example applications -free
+* example applications - free
 * Rails Composer - free
 * tutorials - for subscribers only
 
