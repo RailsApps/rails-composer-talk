@@ -21,13 +21,6 @@ output: index.html
 
 --
 
-### Your free copy of the book
-
-* http://learn-rails.com/students
-* download code: NYCRAILS
-
---
-
 ### If you like the book
 
 * tell your friends
@@ -336,13 +329,6 @@ https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 ### Like it?
 
 * Support the project with a subscription
-
---
-### Trivia contest
-
-* Rails core contributor @tenderlove has a famous cat. What is the [cat's name](https://twitter.com/tenderloves_cat)?
-* The creator of Rails drives race cars. What [team](http://www.youngdriver-amr.com/index.php?view=dh) does he race for?
-* Text to 415-860-9142
 
 --
 
