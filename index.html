@@ -8,7 +8,6 @@
     body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #222;
-  background-color: #f7f7f7;
   font-size: 100%;
 }
 
@@ -16,6 +15,7 @@
   position: absolute;
   top: 0; bottom: 0;
   left: 0; right: 0;
+  background-color: #f7f7f7;
 }
 
 .slide-content {
@@ -139,6 +139,7 @@ pre {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 3px;
+  z-index: 1;
 }
 
 .progress-bar {
@@ -256,140 +257,103 @@ pre {
 }
 
 /*
+
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
 */
 
-code, pre {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  overflow: auto;
-  padding: 6px 10px;
-}
-
-code {
-  padding: 0 5px;
-}
-
-pre>code {
-  margin: 0; padding: 0;
-  border: none;
-  background: transparent;
-}
-
-pre .comment,
-pre .template_comment,
-pre .diff .header,
-pre .javadoc {
-  color: #998;
-  font-style: italic
-}
-
-pre .keyword,
-pre .css .rule .keyword,
-pre .winutils,
-pre .javascript .title,
-pre .nginx .title,
-pre .subst,
-pre .request,
-pre .status {
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
   color: #333;
-  font-weight: bold
+  background: #f8f8f8;
 }
 
-pre .number,
-pre .hexcolor,
-pre .ruby .constant {
-  color: #099;
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
 }
 
-pre .string,
-pre .tag .value,
-pre .phpdoc,
-pre .tex .formula {
-  color: #d14
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
 }
 
-pre .title,
-pre .id {
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
   color: #900;
-  font-weight: bold
+  font-weight: bold;
 }
 
-pre .javascript .title,
-pre .lisp .title,
-pre .clojure .title,
-pre .subst {
-  font-weight: normal
+.hljs-subst {
+  font-weight: normal;
 }
 
-pre .class .title,
-pre .haskell .type,
-pre .vhdl .literal,
-pre .tex .command {
+.hljs-type,
+.hljs-class .hljs-title {
   color: #458;
-  font-weight: bold
+  font-weight: bold;
 }
 
-pre .tag,
-pre .tag .title,
-pre .rules .property,
-pre .django .tag .keyword {
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
   color: #000080;
-  font-weight: normal
+  font-weight: normal;
 }
 
-pre .attribute,
-pre .variable,
-pre .lisp .body {
-  color: #008080
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
 }
 
-pre .regexp {
-  color: #009926
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
 }
 
-pre .class {
-  color: #458;
-  font-weight: bold
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
 }
 
-pre .symbol,
-pre .ruby .symbol .string,
-pre .lisp .keyword,
-pre .tex .special,
-pre .prompt {
-  color: #990073
-}
-
-pre .built_in,
-pre .lisp .title,
-pre .clojure .built_in {
-  color: #0086b3
-}
-
-pre .preprocessor,
-pre .pi,
-pre .doctype,
-pre .shebang,
-pre .cdata {
+.hljs-meta {
   color: #999;
-  font-weight: bold
+  font-weight: bold;
 }
 
-pre .deletion {
-  background: #fdd
+.hljs-deletion {
+  background: #fdd;
 }
 
-pre .addition {
-  background: #dfd
+.hljs-addition {
+  background: #dfd;
 }
 
-pre .diff .change {
-  background: #0086b3
+.hljs-emphasis {
+  font-style: italic;
 }
 
-pre .chunk {
-  color: #aaa
+.hljs-strong {
+  font-weight: bold;
 }
 
 
@@ -401,98 +365,20 @@ pre .chunk {
   </div>
 
   <div class="slide" id="slide-1">
-    <section class="slide-content"><h1 id="rails-composer">Rails Composer</h1>
-<h2 id="and-the-railsapps-open-source-project">and the RailsApps open source project</h2>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/landing/rails-composer-logo.png" height="400px"></p>
+<h2 id="from-the-railsapps-open-source-project">from the RailsApps open source project</h2>
 </section>
   </div>
   <div class="slide hidden" id="slide-2">
     <section class="slide-content"><h2 id="-railsapps-github-io-rails-composer-talk-http-railsapps-github-io-rails-composer-talk-"><a href="http://railsapps.github.io/rails-composer-talk/">railsapps.github.io/rails-composer-talk</a></h2>
-<h2 id="for-this-slideshow">for this slideshow</h2>
+<h2 id="for-this-presentation">for this presentation</h2>
 </section>
   </div>
   <div class="slide hidden" id="slide-3">
-    <section class="slide-content"><p><img src="http://learn-rails.com/images/learn-rails-book-cover.jpg" height="400px"></p>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/railscomposer-welcome.jpg" height="450px"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-4">
-    <section class="slide-content"><h3 id="if-you-like-the-book">If you like the book</h3>
-<ul>
-<li>tell your friends</li>
-<li>write a blog post</li>
-<li>add a link to the book</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-5">
-    <section class="slide-content"><h3 id="the-railsapps-project">The RailsApps project</h3>
-<ul>
-<li><a href="https://github.com/RailsApps">example applications</a></li>
-<li><a href="https://github.com/RailsApps/rails-composer/">Rails Composer</a></li>
-<li><a href="http://railsapps.github.io/">tutorials</a></li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-6">
-    <section class="slide-content"><h3 id="support-for-open-source-projects">Support for open source projects</h3>
-<ul>
-<li>part-time/weekend side projects &lt;--&gt; babies/burnout</li>
-<li>corporate 20% time &lt;--&gt; budget cuts</li>
-<li>what else works?</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><h3 id="-19-month-subscription">$19/month subscription</h3>
-<ul>
-<li>example applications - free</li>
-<li>Rails Composer - free</li>
-<li>tutorials - for subscribers only</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-8">
-    <section class="slide-content"><h3 id="railsapps-milestones">RailsApps Milestones</h3>
-<ul>
-<li>500 subscribers - July 10, 2014</li>
-<li>apprenticeships - next summer?</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-9">
-    <section class="slide-content"><h3 id="example-applications">Example applications</h3>
-<ul>
-<li>starter applications</li>
-<li>reference implementations</li>
-<li>issues and pull requests</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-10">
-    <section class="slide-content"><h3 id="examples-for-rails-and-">Examples for Rails and ...</h3>
-<ul>
-<li>Bootstrap or Foundation</li>
-<li>OmniAuth or Devise (authentication)</li>
-<li>Pundit (authorization)</li>
-<li>more to come</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-11">
-    <section class="slide-content"><h3 id="tutorials-for-rails-and-">Tutorials for Rails and ...</h3>
-<ul>
-<li>Bootstrap</li>
-<li>Devise</li>
-<li>Pundit</li>
-<li>RSpec</li>
-<li>more to come</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-12">
-    <section class="slide-content"><h3 id="no-mystery-code-">No mystery code!</h3>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><h3 id="rails-composer">Rails Composer</h3>
 <pre><code>$ rails new myapp -m
  https://raw.github.com/RailsApps/rails-composer/master/composer.rb</code></pre>
@@ -500,7 +386,7 @@ pre .chunk {
 <p><a href="https://raw.github.com/RailsApps/rails-composer/master/composer.rb">https://raw.github.com/RailsApps/rails-composer/master/composer.rb</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
+  <div class="slide hidden" id="slide-5">
     <section class="slide-content"><pre><code>option  Build a starter application?
           1)  Build a RailsApps example application
           2)  Contributed applications (none available)
@@ -508,47 +394,49 @@ pre .chunk {
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden" id="slide-6">
     <section class="slide-content"><pre><code>option  Choose a starter application.
-          1)  learn-rails
-          2)  rails-bootstrap
-          3)  rails-foundation
-          4)  rails-mailinglist-signup
-          5)  rails-omniauth
-          6)  rails-devise
-          7)  rails-devise-pundit
-          8)  rails-signup-download
-      choose  Enter your selection: 7</code></pre>
+           1)  learn-rails
+           2)  rails-bootstrap
+           3)  rails-foundation
+           4)  rails-mailinglist-activejob
+           5)  rails-omniauth
+           6)  rails-devise
+           7)  rails-devise-roles
+           8)  rails-devise-pundit
+           9)  rails-signup-download
+          10)  rails-stripe-checkout
+          11)  rails-stripe-coupons
+          12)  rails-stripe-membership-saas
+      choose  Enter your selection: 8</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-7">
     <section class="slide-content"><pre><code>Get on the mailing list for Rails Composer news?
       option  Enter your email address:</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><pre><code>option  Web server for development?
-          1)  WEBrick (default)
+          1)  Puma (default)
           2)  Thin
           3)  Unicorn
-          4)  Puma
-          5)  Phusion Passenger (Apache/Nginx)
-          6)  Phusion Passenger (Standalone)
+          4)  Phusion Passenger (Apache/Nginx)
+          5)  Phusion Passenger (Standalone)
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><pre><code>option  Web server for production?
           1)  Same as development
           2)  Thin
           3)  Unicorn
-          4)  Puma
-          5)  Phusion Passenger (Apache/Nginx)
-          6)  Phusion Passenger (Standalone)
+          4)  Phusion Passenger (Apache/Nginx)
+          5)  Phusion Passenger (Standalone)
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><pre><code>option  Database used in development?
         1)  SQLite
         2)  PostgreSQL
@@ -556,7 +444,7 @@ pre .chunk {
     choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-20">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><pre><code>option  Template engine?
           1)  ERB
           2)  Haml
@@ -564,32 +452,33 @@ pre .chunk {
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-21">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><pre><code>option  Test framework?
           1)  None
           2)  RSpec with Capybara
       choose  Enter your selection: 2</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-22">
+  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><pre><code>option  Continuous testing?
           1)  None
           2)  Guard
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-23">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><pre><code>option  Front-end framework?
           1)  None
-          2)  Bootstrap 3.0
-          3)  Bootstrap 2.3
-          4)  Zurb Foundation 5.0
-          5)  Zurb Foundation 4.0
-          6)  Simple CSS
-      choose  Enter your selection: 2</code></pre>
+          2)  Bootstrap 4.0
+          3)  Bootstrap 3.3
+          4)  Bootstrap 2.3
+          5)  Zurb Foundation 5.5
+          6)  Zurb Foundation 4.0
+          7)  Simple CSS
+      choose  Enter your selection: 3</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-24">
+  <div class="slide hidden" id="slide-15">
     <section class="slide-content"><pre><code>option  Add support for sending email?
           1)  None
           2)  Gmail
@@ -599,7 +488,7 @@ pre .chunk {
       choose  Enter your selection: 2</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-25">
+  <div class="slide hidden" id="slide-16">
     <section class="slide-content"><pre><code>option  Devise modules?
           1)  Devise with default modules
           2)  Devise with Confirmable module
@@ -607,14 +496,52 @@ pre .chunk {
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-26">
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><pre><code>option  Admin interface for database?
+          1)  None
+          2)  Thoughtbot Administrate
+      choose  Enter your selection: 2</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><pre><code>option  Use a form builder gem?
           1)  None
           2)  SimpleForm
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-27">
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><pre><code>option  Add Bootstrap page templates?
+         1)  None
+         2)  1 Col Portfolio
+         3)  2 Col Portfolio
+         4)  3 Col Portfolio
+         5)  4 Col Portfolio
+         6)  Bare
+         7)  Blog Home
+         8)  Business Casual
+         9)  Business Frontpage
+        10)  Clean Blog
+        11)  Full Width Pics
+        12)  Heroic Features
+        13)  Landing Page
+        14)  Modern Business
+        15)  One Page Wonder
+        16)  Portfolio Item
+        17)  Round About
+        18)  Shop Homepage
+        19)  Shop Item
+        20)  Simple Sidebar
+
+        21)  Small Business
+
+        22)  Stylish Portfolio
+        23)  The Big Picture
+        24)  Thumbnail Gallery
+      choose  Enter your selection: 21</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><pre><code>option  Install page-view analytics?
           1)  None
           2)  Google Analytics
@@ -622,25 +549,28 @@ pre .chunk {
       choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-28">
-    <section class="slide-content"><pre><code>option  Set a robots.txt file to ban spiders? (y/n) n</code></pre>
+  <div class="slide hidden" id="slide-21">
+    <section class="slide-content"><pre><code>option  Prepare for deployment?
+          1)  no
+          2)  Heroku
+          3)  Capistrano
+      choose  Enter your selection: 1</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-29">
-    <section class="slide-content"><pre><code>option  Create a GitHub repository? (y/n) n</code></pre>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-30">
-    <section class="slide-content"><pre><code>option  Use or create a project-specific rvm gemset? (y/n) y</code></pre>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-31">
-    <section class="slide-content"><pre><code>$ cd myapp
-$ rspec
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><pre><code>option  Disable Rails Turbolinks? (y/n) n
+
+option  Set a robots.txt file to ban spiders? (y/n) n
+
+option  Create a GitHub repository? (y/n) n
+
+
+$ cd myapp
+$ bundle install
 $ rails server</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-32">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><h3 id="sign-in">Sign in</h3>
 <ul>
 <li>user@example.com</li>
@@ -648,23 +578,7 @@ $ rails server</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-33">
-    <section class="slide-content"><h3 id="forget-what-you-ve-seen-if-">Forget what you&#39;ve seen, if ...</h3>
-<ul>
-<li>you&#39;re a student</li>
-<li>you work on one Rails app</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-34">
-    <section class="slide-content"><h3 id="it-s-for-you-if-">It&#39;s for you, if ...</h3>
-<ul>
-<li>you frequently build Rails applications</li>
-<li>you build a new Rails application once a year</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-24">
     <section class="slide-content"><h3 id="what-is-it-really-">What is it, really?</h3>
 <ul>
 <li>a Rails application template</li>
@@ -675,7 +589,7 @@ $ rails server</code></pre>
 <a href="https://raw.github.com/RailsApps/rails-composer/master/composer.rb">https://raw.github.com/RailsApps/rails-composer/master/composer.rb</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-36">
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h3 id="built-from-recipes">Built from recipes</h3>
 <ul>
 <li><a href="https://github.com/RailsApps/rails_apps_composer">rails_apps_composer</a> gem</li>
@@ -684,62 +598,126 @@ $ rails server</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-37">
-    <section class="slide-content"><h3 id="similar-projects">Similar projects</h3>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><h3 id="the-railsapps-project">The RailsApps project</h3>
 <ul>
-<li><a href="http://prelang.com/">Prelang</a></li>
-<li><a href="http://www.railsbricks.net/">RailsBricks</a></li>
+<li><a href="https://github.com/RailsApps">example applications</a></li>
+<li><a href="https://github.com/RailsApps/rails-composer/">Rails Composer</a></li>
+<li><a href="http://railsapps.github.io/">tutorials</a></li>
 </ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-south-africa.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-28">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-south-africa.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-29">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/3-south-africa.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-30">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/4-south-africa.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-nomad.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-32">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-malaysia.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-malaysia.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-34">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/3-malaysia.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-thailand.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-thailand.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-vietnam.jpg" height="500px"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-38">
-    <section class="slide-content"><h3 id="advantages">Advantages</h3>
-<ul>
-<li>open source</li>
-<li>more eyes, fewer bugs</li>
-<li>stays current as Rails and gems change</li>
-</ul>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-vietnam.jpg" height="500px"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-39">
-    <section class="slide-content"><h3 id="drawbacks">Drawbacks</h3>
-<ul>
-<li>difficult to test every option</li>
-<li>some options are neglected</li>
-<li>&quot;build your own&quot; option is a minefield</li>
-</ul>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-bali.jpg" height="500px"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-40">
-    <section class="slide-content"><h3 id="roadmap">Roadmap</h3>
-<ul>
-<li>more example applications</li>
-<li>more options</li>
-</ul>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-bali.jpg" height="500px"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-41">
-    <section class="slide-content"><h3 id="like-it-">Like it?</h3>
-<ul>
-<li>Support the project with a subscription</li>
-</ul>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/3-bali.jpg" height="500px"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-42">
-    <section class="slide-content"><p><img src="http://learn-rails.com/images/rails-trucker-hat.jpg" height="210px"></p>
+    <section class="slide-content"><h3 id="instagram-danielmileskehoe">Instagram: danielmileskehoe</h3>
+<ul>
+<li><a href="https://www.instagram.com/danielmileskehoe/">https://www.instagram.com/danielmileskehoe/</a></li>
+</ul>
 </section>
   </div>
   <div class="slide hidden" id="slide-43">
-    <section class="slide-content"></section>
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-australia.jpg" height="500px"></p>
+</section>
   </div>
   <div class="slide hidden" id="slide-44">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-australia.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-45">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/3-australia.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-46">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/4-australia.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-47">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/1-philippines.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-48">
+    <section class="slide-content"><h3 id="-to-strive-to-seek-to-find-and-not-to-yield-">&quot;To strive, to seek, to find, and not to yield.&quot;</h3>
+<h3 id="-tennyson">-- Tennyson</h3>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-49">
+    <section class="slide-content"><p><img src="http://railsapps.github.io/images/nomad/2-philippines.jpg" height="500px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-50">
+    <section class="slide-content"><p><img src="http://learn-rails.com/images/rails-trucker-hat.jpg" height="210px"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-51">
+    <section class="slide-content"></section>
+  </div>
+  <div class="slide hidden author-slide" id="slide-52">
     <section class="slide-content"><div class="author">
   <h1 class="name">Daniel Kehoe</h1>
     <h3 class="twitter">
       <a href="http://twitter.com/@rails_apps">@rails_apps</a>
     </h3>
     <h3 class="url">
-      <a href="http://railsapps.github.io/">http://railsapps.github.io/</a>
+      <a href="http://railscomposer.com/">http://railscomposer.com/</a>
     </h3>
 </div>
 </section>
@@ -787,7 +765,11 @@ function navigate(n) {
  * Updates the current URL to include a hashtag of the current page number.
  */
 function updateURL() {
-  window.history.replaceState({} , null, '#' + currentPosition());
+  try {
+    window.history.replaceState({} , null, '#' + currentPosition());
+  } catch (e) {
+    window.location.hash = currentPosition();
+  }
 }
 
 
